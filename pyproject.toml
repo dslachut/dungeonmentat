@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "dungeonmentat"
+version = "0.1.0"
+description = "An intelligent assistant for tabletop roleplaying games"
+authors = ["David Lachut"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+platformdirs = "^4.3.6"
+pymupdf = "^1.25.3"
+pymupdf4llm = "^0.0.17"
+openai = "^1.65.3"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.8.0"
+pylint = "^3.2.6"
+ipykernel = "^6.29.5"
+pytest = "^8.3.2"
+coverage = "^7.6.1"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+disable = """
+    missing-module-docstring
+"""
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

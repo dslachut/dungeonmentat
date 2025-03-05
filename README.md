@@ -1,4 +1,4 @@
-Dungeon Mentat
+Dungeon Mentat (WIP)
 ===
 An intelligent assistant for tabletop roleplaying games
 
@@ -25,7 +25,8 @@ Stack
 ---
 
 - Python
+- Poetry
 - LanceDB
 - Kuzu?
 - Some kind of local LLM
-
+- OpenAI library

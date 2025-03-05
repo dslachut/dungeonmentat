@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Don't store binaries or notebooks
+*.pdf
+*.ipynb
+*.ipynb_checkpoints
